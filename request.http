@@ -1,0 +1,16 @@
+###
+
+POST http://localhost:9000/api/users
+content-type: application/json
+
+{
+    "name": "prueba",
+    "age": "43",
+    "email": "prueba@api3.com"
+}
+
+###
+GET  http://localhost:9000/api/users
+
+###
+GET  http://localhost:9000/api/users/62c4bf05f6528be25f354a3f
