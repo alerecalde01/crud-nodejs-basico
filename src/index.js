@@ -15,13 +15,14 @@ app.use("/api", userRoutes)
 
 // routes
 app.get('/', (req, res) => {
-    res.send("Welcome to mi API");
+    res.send("API Lista");
 });
 
 
 // mongo db connection
-mongoose.connect(process.env.MONGODB_URI).then(() => {
-    console.log("Connect database Mongo db atlas...")
+mongoose.connect(
+    process.env.MONGODB_URI).then(() => {
+    console.log("Conectado a Mongo db atlas ...")
 }).catch((error) => console.error(error));
 
 app.listen(port, () => {

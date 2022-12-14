@@ -1,10 +1,10 @@
 ###
 
-POST http://localhost:9000/api/users
+POST http://localhost:9000/api/users HTTP/1.1
 content-type: application/json
 
 {
-    "name": "prueba",
+    "name": "otro usuario",
     "age": "43",
     "email": "prueba@api3.com"
 }
@@ -13,4 +13,4 @@ content-type: application/json
 GET  http://localhost:9000/api/users
 
 ###
-GET  http://localhost:9000/api/users/62c4bf05f6528be25f354a3f
+GET  http://localhost:9000/api/users/639a01b5a3edcf7ad923c61f
